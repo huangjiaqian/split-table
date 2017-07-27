@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="split-table/split-table.css" />
+</head>
+<body>
+    <div data-split="container" data-split-url="data.jsp">
+			 <!--
+			<div style="margin-bottom:5px;margin-top:5px;">
+				<input type="text" name="searchDepartmentId" data-bower='true' data-bower-id='1' placeholder="所属部门" data-split="tj" data-split-search-name="department_id" data-split-search-op="="  />
+				<input type="text" placeholder="名字" data-split="tj" data-split-search-name="lastname" data-split-search-op="like"  />
+				<input type="text" placeholder="工号" data-split="tj" data-split-search-name="workcode" data-split-search-op="like"  />
+				<button data-split-search="btn" class="btn"><span class="glyphicon glyphicon-search"></span></button>
+                <button data-split-excel="btn" class="btn pull-right" style="margin:5px;">导出excel</button>
+			</div>
+			<div data-split-excel="data" style="display: none;">
+				[{"sort":1,"key":"workcode","label":"工号"}
+				,{"sort":3,"key":"lastname","label":"名字"}
+				,{"sort":4,"key":"birth_date","label":"生日"}
+				,{"sort":5,"key":"sex","label":"性别"}
+				,{"sort":6,"key":"nation","label":"民族"}
+				,{"sort":7,"key":"academic","label":"学历"}
+				,{"sort":8,"key":"phone","label":"电话"}]
+			</div>
+			-->
+			
+			
+			
+		<table data-split="table">
+			<thead>
+				<tr>
+					<th><input type="checkbox" id="checkAll"/></th>
+					<th>序号</th>
+					<th>工号</th>
+					<th>名字</th>
+					<th>生日</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			 
+			<tbody>
+				<tr>
+					<td><input type="checkbox" class='_check_data_checkbox' data-staff-id="$id$" /></td>
+					<td>$_st_index$</td>
+					<td>$workcode$</td>
+					<td>$lastname$</td>
+					<td>$birth_date$</td>
+					<td>
+						<a href="#" onclick='editStaff("$id$")'>修改</a>
+						&nbsp;&nbsp;
+						<a href="#" onclick='delStaff("$id$")'>删除</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+    <script src="split-table/split-table.js"></script>
+</body>
+</html>

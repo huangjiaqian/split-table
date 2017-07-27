@@ -1,0 +1,50 @@
+._hjq_split-container{
+	width: 100%;
+}
+._hjq_split-container table{
+	width: 100%;
+	border:1px solid #DDD;
+	border-collapse: collapse;
+}
+._hjq_split-container table th,td{
+	border:1px solid #DDD;
+	padding: 0.4em;
+}
+._hjq_split-container table td{
+	text-align: center;
+}
+._hjq_split-container table th{
+	background-color: #EEE;
+	color:#444;
+	text-align: center;
+}
+._hjq_split-container table tr:hover{
+	background-color: #DDD;
+}
+
+._split_btn_group{
+	margin-top: 0.6em;
+}
+._split_btn_group span{
+	color:#555;
+}
+._split_btn_group select{
+	border:1px solid #CCC;
+	padding: 0.15em 0.6em 0.15em 0.6em;
+}
+._split_btn_group input{
+	border:1px solid #CCC;
+	padding: 0.22em 1em 0.22em 1em;
+	width:3em;
+}
+._split-btn{
+	background: #1995dc;
+	border: 0;
+	color: #FFF;
+	margin-left:2px;
+	font-size: 12px;
+	padding: 5px 10px 5px 10px;
+}
+._split-btn:hover{
+	background: #0884cb;
+}
